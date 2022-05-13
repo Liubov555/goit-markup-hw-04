@@ -117,10 +117,7 @@ img {
 .header-contacts {
     display: flex;
     margin-left: auto;
-}
-
-.header-contacts .item:not(:last-child) {
-    margin-right: 50px;
+    text-align: center;
 }
 
 
@@ -128,11 +125,31 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
 }
 
 .contacts:hover,
 .contacts:focus {
+    color: #2196f3;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #2196f3;
+}
+
+.contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
     color: #2196f3;
 }
 
@@ -151,6 +168,10 @@ img {
     max-width: 1600px;
     text-align: center;
     background-color: #2F303A;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -159,7 +180,6 @@ img {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    background-color: #2F303A;
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
@@ -225,6 +245,15 @@ img {
 
 .benefits .item:not(:last-child) {
     margin-right: 30px;
+}
+
+.benefits-pictures {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
 }
 
 .text-benefits {
@@ -311,6 +340,100 @@ img {
     font-size: 16px;
     line-height: 1.18;
     color: #757575;
+    margin-bottom: 16px;
+}
+
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-social-icons,
+.footer-social-icons {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-social-icons:not(:last-child),
+.footer-social-icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+.link-social-icons,
+.link-footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.link-social-icons:hover,
+.link-social-icons:focus,
+.link-footer-icons:hover,
+.link-footer-icons:focus {
+    background-color: #2196F3;
+}
+
+.social-icons {
+    fill: #AFB1B8;
+}
+
+.social-icons:hover,
+.social-icons:focus,
+.social-icons-footer:hover,
+.social-icons-footer:focus {
+    fill: #FFFFFF;
+}
+
+.clients-title {
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid #2196F3;
+}
+
+.clients-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-icons {
+    fill: #AFB1B8;
+}
+
+.clients-icons:hover,
+.clients-icons:focus {
+    fill: #2196F3;
 }
 
 /*Footer*/
@@ -322,6 +445,15 @@ img {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-section {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-left {
+    margin-right: 70px;
 }
 
 .footer-logo {
@@ -354,6 +486,29 @@ img {
 
 .footer-contacts-list .item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.joing-us {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.link-footer-icons {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons-footer {
+    fill: #FFFFFF
 }
 
 /*Основна сторінка Портфоліо*/
