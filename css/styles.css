@@ -359,10 +359,6 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .team-social-icons:not(:last-child),
@@ -378,28 +374,28 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    color: #AFB1B8;
+
 }
 
 .link-social-icons:hover,
 .link-social-icons:focus,
 .link-footer-icons:hover,
-.link-footer-icons:focus,
-.social-icons:hover,
-.social-icons:focus,
-.social-icons-footer:hover,
-.social-icons-footer:focus {
+.link-footer-icons:focus {
     background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 .social-icons {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 .social-icons:hover,
 .social-icons:focus,
 .social-icons-footer:hover,
 .social-icons-footer:focus {
-    fill: #FFFFFF;
+    fill: currentColor;
+    background-color: #2196F3;
 }
 
 .clients-title {
@@ -411,21 +407,12 @@ img {
 }
 
 .clients-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 170px;
     height: 92px;
 }
 
 .clients-item:not(:last-child) {
     margin-right: 30px;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid #2196F3;
 }
 
 .clients-link {
@@ -437,16 +424,22 @@ img {
     height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    color: #AFB1B8;
+}
 
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
 }
 
 .clients-icons {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 .clients-icons:hover,
 .clients-icons:focus {
-    fill: #2196F3;
+    fill: currentColor;
 }
 
 /*Footer*/
@@ -571,14 +564,13 @@ img {
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
     background: #FFFFFF;
-    border-top: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
 }
 
 .text-portfolio {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 
 }
 
@@ -594,6 +586,10 @@ img {
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
+}
+
+.card-link {
+    display: block;
 }
 
 .card-link:hover,
